@@ -3,6 +3,12 @@ public class Account {
     private double balance;
     private double debitCeiling;
 
+    public Account(String name) {
+        this.name = name;
+        this.balance = 0;
+        this.debitCeiling = -500;
+    }
+
     public String getName() {
         return this.name;
     }
